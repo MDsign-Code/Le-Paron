@@ -2,5 +2,7 @@
   "name": "Dapur Le'Paron - Menu Digital Nusantara",
   "description": "Menu Digital Dapur Le'Paroan: Rasa Tradisional Bintang Lima, Harga Kaki Lima (20K-30K). Kemasan praktis & sehat Paper Bowl & Box Lunch dengan gizi seimbang harian.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

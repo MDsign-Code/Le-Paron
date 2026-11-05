@@ -1,3 +1,8 @@
+import nasiUdukImg from '../assets/images/nasi_uduk_bowl_1793853658617.jpg';
+import pecelEmpalImg from '../assets/images/pecel_madiun_empal_1793853658734.jpg';
+import sopIgaImg from '../assets/images/sop_iga_sapi_1793853659998.jpg';
+import paketLiwetanImg from '../assets/images/paket_liwetan_pesta_1793853660421.jpg';
+
 export type DayId = 'senin' | 'selasa' | 'rabu' | 'kamis' | 'jumat' | 'sabtu' | 'minggu';
 export type MealSession = 'sarapan' | 'siang' | 'malam' | 'spesial' | 'minuman';
 export type PackagingOption = 'Paper Bowl' | 'Box Lunch';
@@ -98,7 +103,7 @@ export const MENU_ITEMS: MenuItem[] = [
     tier: 'Reguler',
     nutrition: NUTRITION_STANDARDS.sarapan,
     packagingDefault: 'Paper Bowl',
-    image: '/src/assets/images/nasi_uduk_bowl_1793853658617.jpg',
+    image: nasiUdukImg,
     ingredients: ['Nasi Uduk Gurih', 'Ayam Suwir Lengkuas', 'Bihun Goreng', 'Telur Dadar Iris', 'Orek Tempe', 'Kerupuk', 'Sambal Kacang Pisah'],
     features: ['Kemasan Paper Bowl praktis langsung santap', 'Tidak berminyak & tidak memicu asam lambung', 'Sambal kacang terpisah'],
     servingAdvice: 'Tuangkan sambal kacang secukupnya sesuai selera pedas pagi Anda.',
@@ -120,7 +125,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     nutrition: NUTRITION_STANDARDS.siang,
     packagingDefault: 'Box Lunch',
-    image: '/src/assets/images/pecel_madiun_empal_1793853658734.jpg',
+    image: pecelEmpalImg,
     ingredients: ['Nasi Putih Pulen', 'Empal Gepuk Sapi Rempah', 'Sayur Kangkung & Tauge Segar', 'Kacang Panjang', 'Bumbu Kacang Siram Madiun', 'Rempeyek Kacang'],
     features: ['Bumbu kacang kental siram terpisah', 'Sayuran segar higienis bebas layu', 'Tersedia varian Reguler (20K) & Premium (25K)'],
     servingAdvice: 'Siramkan bumbu kacang hangat sesaat sebelum disantap untuk sensasi gurih maksimal.',
@@ -138,7 +143,7 @@ export const MENU_ITEMS: MenuItem[] = [
     tier: 'Premium',
     nutrition: NUTRITION_STANDARDS.malam,
     packagingDefault: 'Paper Bowl',
-    image: '/src/assets/images/sop_iga_sapi_1793853659998.jpg',
+    image: sopIgaImg,
     ingredients: ['Potongan Iga Sapi Empuk', 'Kuah Kaldu Rempah Bening', 'Wortel & Kentang Segar', 'Taburan Daun Bawang & Bawang Goreng', 'Nasi Putih Terpisah', 'Sambal Kecap & Jeruk Nipis'],
     features: ['Paper Bowl anti bocor thermal grade', 'Rendah lemak jenuh, kuah segar ramah cerna', 'Jeruk nipis & sambal kecap terpisah'],
     servingAdvice: 'Beri perasan jeruk nipis pada kuah untuk kesegaran optimal.',
@@ -424,7 +429,7 @@ export const MENU_ITEMS: MenuItem[] = [
     tier: 'Paket 5 Orang',
     nutrition: NUTRITION_STANDARDS.spesial,
     packagingDefault: 'Family Pack',
-    image: '/src/assets/images/paket_liwetan_pesta_1793853660421.jpg',
+    image: paketLiwetanImg,
     ingredients: [
       '5 Porsi Nasi Liwet Rempah Daun Salam',
       '5 Potong Ayam Goreng Lengkuas Rempah',

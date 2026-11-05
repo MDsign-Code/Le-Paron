@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Utensils, HeartHandshake, ShieldCheck, Flame, ArrowRight } from 'lucide-react';
 import { formatRupiah } from '../utils/orderUtils';
+import { getAssetUrl } from '../utils/assetHelper';
 
 interface HeroBannerProps {
   onSelectDay: (dayId: string) => void;
@@ -108,7 +109,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
             <div className="relative w-full max-w-md rounded-3xl overflow-hidden border border-amber-500/40 bg-black shadow-2xl shadow-stone-950/90 group">
               <div className="aspect-square w-full overflow-hidden bg-black flex items-center justify-center p-6 relative">
                 <img
-                  src="/assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png"
+                  src={getAssetUrl('assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png')}
                   alt="Logo Resmi Le'Paron - Budaya Tradisional Indonesia"
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />

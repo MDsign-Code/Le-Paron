@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShoppingBag, Sun, Moon, UtensilsCrossed } from 'lucide-react';
 import { formatRupiah } from '../utils/orderUtils';
+import { getAssetUrl } from '../utils/assetHelper';
 
 interface HeaderProps {
   cartCount: number;
@@ -29,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <div className="w-10 h-10 rounded-xl overflow-hidden bg-black border border-amber-500/40 flex items-center justify-center p-0.5">
             <img 
-              src="/assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png" 
+              src={getAssetUrl('assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png')} 
               alt="Logo Dapur Le'Paron" 
               className="w-full h-full object-contain rounded-lg group-hover:scale-105 transition-transform"
             />

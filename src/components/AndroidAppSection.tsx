@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Smartphone, Download, Zap, WifiOff, ShieldCheck, ArrowRight, Share2, Check, ExternalLink } from 'lucide-react';
 import { usePWAInstall } from '../hooks/usePWAInstall';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export const AndroidAppSection: React.FC = () => {
   const { isInstallable, isInstalled, install } = usePWAInstall();
@@ -109,7 +110,7 @@ export const AndroidAppSection: React.FC = () => {
                   <div className="flex items-center justify-between border-b border-stone-800 pb-2">
                     <div className="flex items-center gap-1.5">
                       <div className="w-5 h-5 rounded-md overflow-hidden bg-black flex items-center justify-center">
-                        <img src="/assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png" alt="Logo" className="w-full h-full object-contain" />
+                        <img src={getAssetUrl('assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png')} alt="Logo" className="w-full h-full object-contain" />
                       </div>
                       <span className="text-xs font-bold text-amber-500 font-display">Le'Paron</span>
                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Clock, MapPin, Heart, ShieldCheck } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-lg overflow-hidden bg-black border border-amber-500/40 p-0.5 flex items-center justify-center">
                 <img
-                  src="/assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png"
+                  src={getAssetUrl('assets/aistudio/Le_Paron_Retro_Orange_Logo_066b3e07.png')}
                   alt="Logo Le'Paron"
                   className="w-full h-full object-contain rounded"
                 />

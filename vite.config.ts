@@ -6,6 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [
       react(),
       tailwindcss(),
@@ -20,7 +21,7 @@ export default defineConfig(() => {
           'pwa-maskable-512x512.png',
         ],
         manifest: {
-          id: '/',
+          id: './',
           name: "Dapur Le'Paron - Menu Digital Nusantara",
           short_name: "Le'Paron",
           description: "Aplikasi Menu Digital Dapur Le'Paroan: Rasa Tradisional Bintang Lima, Harga Kaki Lima (20K-30K). Kemasan praktis & sehat Paper Bowl & Box Lunch.",
@@ -28,8 +29,8 @@ export default defineConfig(() => {
           background_color: '#0c0a09',
           display: 'standalone',
           orientation: 'portrait',
-          start_url: '/',
-          scope: '/',
+          start_url: './',
+          scope: './',
           categories: ['food', 'shopping', 'lifestyle'],
           icons: [
             {
